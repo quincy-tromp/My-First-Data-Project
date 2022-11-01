@@ -1,7 +1,7 @@
 set @start_dt = '2022-09-01';
 set @end_dt = '2022-09-30';
 
-select l.transaction_type, l.label, sum(amount)
+select l.transaction_type, l.label, sum(amount) as total_amount
 from transactions t
 right outer join labels l on l.label = t.label
 where l.transaction_type = 'Income'
