@@ -1,6 +1,6 @@
 import pandas as pd
 import pymysql
-import data_quality_checks as dq
+import old_script.data_quality_checks as dq
 
 
 # EXTRACT 
