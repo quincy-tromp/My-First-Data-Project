@@ -1,6 +1,6 @@
 import pandas as pd
 import pymysql
-import old_script.data_quality_checks as dq
+import data_quality_checks as dq
 
 
 # EXTRACT 
@@ -33,17 +33,17 @@ try:
     print(data_quality_check)
 
     print('Start inserting.')
-    # sql = "INSERT INTO transactions (transact_dt, transact_amount, label) VALUES (%s, %s, %s)"
+    sql = "INSERT INTO transactions (transact_dt, transact_amount, label) VALUES (%s, %s, %s)"
 
-    # row_inserted = 0
-    # for index, row in data.iterrows():
-    #     mycursor.execute(sql, tuple(row))
-    #     row_inserted += 1
+    row_inserted = 0
+    for index, row in data.iterrows():
+        mycursor.execute(sql, tuple(row))
+        row_inserted += 1
 
-    # mycursor.close()
-    # mydb.commit()
+    mycursor.close()
+    mydb.commit()
     
-    # print(f"\n{row_inserted} of {index+1} row(s) inserted.\n")
+    print(f"\n{row_inserted} of {index+1} row(s) inserted.\n")
 
 except:
     print("Process Failed.")
