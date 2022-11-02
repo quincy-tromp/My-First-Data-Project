@@ -1,6 +1,10 @@
 import pandas as pd
+import sys
 
-CSV_FILE = '/Users/quincytromp/Downloads/Sep-2022.csv'
+if len(sys.argv) == 1:
+    print("Usage: python.py <argument>")
+else:
+    csv_file = sys.argv[1]
 
 def transform_data(filename):
     '''Transforms date-column data type from numbers to date.'''
@@ -9,4 +13,4 @@ def transform_data(filename):
     df.to_csv(filename, index=False)
 
 if __name__ == '__main__':
-    transform_data(CSV_FILE)
+    transform_data(csv_file)
