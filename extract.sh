@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-set -e
+# set -e
 
 FILENAME=`ls ~/Downloads/*.csv`&& FPATH=`readlink -f $FILENAME`
 python transform_csv.py $FPATH
@@ -12,3 +12,5 @@ FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'
 (@Transactiedatum,@Transactiebedrag,@Label) set transaction_dt=@Transactiedatum,amount=@Transactiebedrag,label=@Label;
 commit;
 here-doc
+
+rm $FPATH
