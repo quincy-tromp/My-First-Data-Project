@@ -19,6 +19,6 @@ cleanup:
 	@echo "Start cleanup..."
 	@source ~/Projects/PF_DB/venv/config.cfg
 	@rm ${FPATH}
-	@unset ${FPATH}
 complete:
 	@echo "Process complete."
+all: hello extract transform load cleanup complete
