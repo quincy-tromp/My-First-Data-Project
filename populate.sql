@@ -1,4 +1,4 @@
-use PF_DB;
+use MF_DB;
 insert into labels (label, transaction_type, category) values ('Salary', 'Income', 'Income');
 insert into labels (label, transaction_type, category) values ('Bonus & Holiday Allowance', 'Income', 'Income');
 insert into labels (label, transaction_type, category) values ('Home & Health Allowance', 'Income', 'Income');

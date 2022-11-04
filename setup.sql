@@ -1,8 +1,8 @@
-drop database if exists PF_DB;
+drop database if exists MF_DB;
 
-create database PF_DB;
+create database MF_DB;
 
-use PF_DB;
+use MF_DB;
 
 drop table if exists labels;
 
