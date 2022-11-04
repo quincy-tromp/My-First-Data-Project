@@ -9,7 +9,6 @@ load_query = f"LOAD DATA LOCAL INFILE '{data}' INTO TABLE transactions \
             (@Transactiedatum,@Transactiebedrag,@Label) \
             set transaction_dt=@Transactiedatum,amount=@Transactiebedrag,label=@Label;"
 
-print('connecting to db')
 try:
     mydb = pymysql.connect(
     host='localhost',

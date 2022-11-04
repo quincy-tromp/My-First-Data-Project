@@ -1,3 +1,4 @@
+include venv/pyvenv.cfg
 hello:
 	@echo "Hello again"
 transform:
