@@ -20,3 +20,7 @@ create table transactions
     label varchar(32) not null ,
     constraint trans_pk primary key (transaction_dt, amount, label) , 
     constraint label_fk foreign key (label) references labels (label) );
+
+load data local infile '/Users/quincytromp/Projects/My_Finance_DB/populate.csv' into table labels
+fields terminated by ',' lines terminated by '\n' 
+(@Label,@Transaction_type,@Category) set label=@Label,transaction_type=@Transaction_type,category=@Category;
