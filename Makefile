@@ -9,4 +9,4 @@ cleanup:
 	@python cleanup.py
 complete:
 	@echo "process completed"
-all: hello extract transform load cleanup complete
+all: hello transform load cleanup complete
