@@ -23,12 +23,12 @@ except:
     print('db connection failed')
 
 else:
-    print('start loading')
+    print('start loading data')
     try:
         mycursor.execute(load_query)
         mycursor.close()
         mydb.commit()
         mydb.close()
-        print('end loading')
+        print('end load')
     except:
         print('loading failed') 
