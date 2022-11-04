@@ -4,7 +4,7 @@ import os
 
 data = e.path_extracter()
 
-load_query = f"LOAD DATA LOCAL INFILE '{data}' INTO TABLE transactions \
+load_data = f"LOAD DATA LOCAL INFILE '{data}' INTO TABLE transactions \
             FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' \
             (@Transactiedatum,@Transactiebedrag,@Label) \
             set transaction_dt=@Transactiedatum,amount=@Transactiebedrag,label=@Label;"
@@ -12,8 +12,8 @@ load_query = f"LOAD DATA LOCAL INFILE '{data}' INTO TABLE transactions \
 try:
     mydb = pymysql.connect(
     host='localhost',
-    user=os.getenv('DB_USER'),
-    password=os.getenv('DB_USER_PASSWORD'),
+    user='quincytromp',
+    password=os.getenv('MYSQL_PASSWORD'),
     database='PF_DB',
     local_infile=True
     )
@@ -25,7 +25,7 @@ except:
 else:
     print('start loading data')
     try:
-        mycursor.execute(load_query)
+        mycursor.execute(load_data)
         mycursor.close()
         mydb.commit()
         mydb.close()
