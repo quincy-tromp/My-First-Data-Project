@@ -1,8 +1,5 @@
 hello:
-	@echo "Hello"
-extract:
-	@echo "Start extracting..."
-	@./extract.sh
+	@echo "Hello again"
 transform:
 	@python transform.py
 load:
@@ -12,5 +9,5 @@ cleanup:
 	@source ~/Projects/PF_DB/venv/config.cfg
 	@rm ${FPATH}
 complete:
-	@echo "Process complete."
+	@echo "process completed"
 all: hello extract transform load cleanup complete
