@@ -1,0 +1,47 @@
+Label,Transaction_type,Category
+Salary,Income,Income
+Bonus & Holiday Allowance,Income,Income
+Home & Health Allowance,Income,Income
+Sold Stuff,Income,Income
+Rent,Expenses,Home
+Home Insurance,Expenses,Home
+Gas & Electricity,Expenses,Home
+Water,Expenses,Home
+Internet,Expenses,Home
+Household Repairs,Expenses,Home
+Others,Expenses,Home
+Health Insurance,Expenses,Medical
+Primary Care & Medication,Expenses,Medical
+Dental Care,Expenses,Medical
+Grocery,Expenses,Food
+Restaurants,Expenses,Food
+Public Transport,Expenses,Transportation
+Gasoline,Expenses,Transportation
+Car Insurance,Expenses,Transportation
+Maintenance & Repair,Expenses,Transportation
+Parking Fees,Expenses,Transportation
+Car Payments,Expenses,Transportation
+Bank Fee,Expenses,Financial
+Income Tax,Expenses,Financial
+Allowance PayBack,Expenses,Financial
+Movies & Books,Expenses,Entertainment
+Tv & Streaming,Expenses,Entertainment
+Events & Vacation,Expenses,Entertainment
+Hobbies,Expenses,Entertainment
+Clothing & Accesories,Expenses,Shopping
+Electronics & Software,Expenses,Shopping
+Home Decor & Furnishings,Expenses,Shopping
+Gifts,Expenses,Shopping
+Cell Phone,Expenses,Personal
+Haircuts & Cosmetics,Expenses,Personal
+Self Care,Expenses,Personal
+Education,Expenses,PersonalInvestment
+Loan Payments,Expenses,PersonalInvestment
+Emergency Fund,Savings,Savings	
+Education Fund,Savings,Savings
+Vacation Fund,Savings,Savings
+Car Fund,Savings,Savings
+Repayment Fund,Savings,Savings
+Software Fund,Savings,Savings
+Babe Fund,Savings,Savings
+Mayleigh Fund,Savings,Savings
