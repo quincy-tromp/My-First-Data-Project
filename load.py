@@ -4,10 +4,12 @@ import os
 
 data = e.path_extracter()
 
-load_data = f"LOAD DATA LOCAL INFILE '{data}' INTO TABLE transactions \
-            FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' \
-            (@Transactiedatum,@Transactiebedrag,@Label) \
-            set transaction_dt=@Transactiedatum,amount=@Transactiebedrag,label=@Label;"
+load_data = f'''
+LOAD DATA LOCAL INFILE '{data}' INTO TABLE transactions
+FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n'
+(@Transactiedatum,@Transactiebedrag,@Label)
+set transaction_dt=@Transactiedatum,amount=@Transactiebedrag,label=@Label;
+'''
 
 try:
     mydb = pymysql.connect(
