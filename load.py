@@ -16,7 +16,7 @@ try:
     host='localhost',
     user='quincytromp',
     password=os.getenv('MYSQL_PASSWORD'),
-    database='MF_DB',
+    database='test_DB',
     local_infile=True
     )
     mycursor = mydb.cursor()
