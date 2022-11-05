@@ -25,8 +25,8 @@ except:
     print('db connection failed')
 
 else:
+    print('start loading data')
     try:
-        print('start loading data')
         mycursor.execute(load_data)
         mycursor.close()
         mydb.commit()
