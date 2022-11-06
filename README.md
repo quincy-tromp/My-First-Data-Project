@@ -1,4 +1,4 @@
-<h1>My Finance DB Project</h1>
+<h1>Project My Finances to Database</h1>
 <br>
-<h2>Goal: Load my financial data into MySQL</h2>
-<p>Why not? I believe that more insight can help make better decisions.</p>
+<h2>Goal: Load my financial data in MySQL for analysis</h2>
+<p>Why not? I believe that more insight helps make better decisions.</p>
