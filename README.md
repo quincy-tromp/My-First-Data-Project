@@ -2,4 +2,6 @@
 <br>
 <h2>Goal: Load my banking transactions into a MySQL database for analysis</h2>
 <br>
-<p>With insight you can make better choices. <em>For personal use.</em></p>
+<p>With insight you can make better choices.</p>
+<br>
+<p><em>For personal use.</em></p>
