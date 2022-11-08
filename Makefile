@@ -1,6 +1,6 @@
 include venv/pyvenv.cfg
 hello:
-	@echo "Hello again"
+	@echo "hello again"
 transform:
 	@python transform.py
 load:
