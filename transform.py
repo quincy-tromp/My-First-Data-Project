@@ -2,7 +2,7 @@ import pandas as pd
 import extract as e
 
 def transform_data(extracter):
-    '''Transforms dates from numbers to date-type
+    '''From date column, transform numbers to dates
     '''
     print('start transforming data')
     data = extracter()
