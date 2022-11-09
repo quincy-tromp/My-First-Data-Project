@@ -2,14 +2,15 @@
 
 A simple data pipeline to transform and store my bank transactions data in a MySQL Database.
 
-Skills used:
+<u>Skills used:</u>
 - Python
 - SQL
 - Bash
 - Git
 - Pandas
 
-Result:
+<u>Result:</u>
+
 <img src='result.gif'>
 
 
