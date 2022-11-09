@@ -1,8 +1,8 @@
-drop database if exists MF_DB;
+drop database if exists My_DB;
 
-create database MF_DB;
+create database My_DB;
 
-use MF_DB;
+use My_DB;
 
 drop table if exists labels;
 
@@ -10,16 +10,17 @@ create table labels
 ( 	label varchar(32) ,
     category varchar(32) not null ,
     transaction_type varchar(32) not null ,
-    constraint label_pk primary key (label) );
+    constraint pk_label primary key (label) );
 
 drop table if exists transactions;
 
 create table transactions
-(	transaction_dt date not null ,
-    amount decimal(8,2) not null ,
-    label varchar(32) not null ,
-    constraint trans_pk primary key (transaction_dt, amount, label) , 
-    constraint label_fk foreign key (label) references labels (label) );
+(	transaction_id  number auto_increment ,
+    transaction_dt  date not null ,
+    amount          decimal(8,2) not null ,
+    label           varchar(32) not null ,
+    constraint pk_transaction primary key (transaction_id) , 
+    constraint fk_label foreign key (label) references labels (label) );
 
 load data local infile '/Users/quincytromp/Projects/My_Finance_DB/populate.csv' into table labels
 fields terminated by ',' lines terminated by '\n' 
