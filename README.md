@@ -1,6 +1,6 @@
 <h1>My First Data Project</h1>
 
-<h2>A simple data pipeline to transform and store my bank transactions data in a MySQL Database.</h2>
+<h3>A simple data pipeline to transform and store my bank transactions data in a MySQL Database.</h3>
 
 <ins>Skills used:</ins>
 - Python
