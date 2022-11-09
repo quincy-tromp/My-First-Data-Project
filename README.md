@@ -9,4 +9,8 @@ Skills used:
 - Git
 - Pandas
 
+Result:
 <img src='result.gif'>
+
+
+<b><em>To be continued.</em></b>
