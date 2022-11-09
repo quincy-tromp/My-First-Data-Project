@@ -8,3 +8,5 @@ Skills used:
 - Bash
 - Git
 - Pandas
+
+<img src='result.gif'>
