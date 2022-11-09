@@ -15,10 +15,10 @@ create table labels
 drop table if exists transactions;
 
 create table transactions
-(	transaction_id  number auto_increment ,
-    transaction_dt  date not null ,
-    amount          decimal(8,2) not null ,
-    label           varchar(32) not null ,
+(	transaction_id int not null auto_increment ,
+    transaction_dt date not null ,
+    amount decimal(8,2) not null ,
+    label varchar(32) not null ,
     constraint pk_transaction primary key (transaction_id) , 
     constraint fk_label foreign key (label) references labels (label) );
 
